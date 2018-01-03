@@ -1,0 +1,122 @@
+/* font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto', sans-serif; */
+
+body {
+    background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #26a69a;
+}
+
+.header {
+    width: 100%;
+    height: 100%;
+}
+
+.centerImg {
+    display: block;
+    margin: auto;
+}
+
+.imageLeft {
+    margin: 10px 20px 10px 0px;
+}
+
+.imageRight {
+    margin: 10px 0px 10px 20px;
+}
+
+.portfolio-section {
+    text-align: center;
+}
+
+.navColor {
+    background-color: white;
+    color: black;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.navFont {
+    color: black;
+}
+
+.brand-logo {
+    color: black;
+}
+
+#tabs-about {
+    margin-left: 30px;
+}
+
+#sidebar {
+    /* border-style: none solid solid none;
+    border-color: grey; */
+    /* text-align: center; */
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+#timesTitle {
+    margin-top: 30px;
+    padding-top: 80px;
+}
+
+#titleArea {
+    padding: 0px 30px 0px 40px;
+}
+
+#always-ad {
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 20%;
+}
+
+.news-section {
+    padding: 10px 30px 20px 40px;
+}
+
+.imageBox {
+    overflow: hidden;
+    position: relative;
+    font-size: 20px;
+}
+
+.school-logos {
+    height: 10%;
+    width: 10%;
+    margin-right: 10px;
+   
+}
+
+.portfolio-rows {
+    margin-top: 20px;
+}
+
+.overlayContent {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 600px;
+    padding: 15px 20px;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+    background-color: white;
+    opacity: 0.9;
+}
+
+.imageBox:hover .overlayContent {
+    top: 0;
+}
+
