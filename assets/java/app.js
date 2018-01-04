@@ -117,7 +117,7 @@ $(document).ready(function () {
         '<strong> 1969 </strong>',
         'In the late 60s there were large-scale demonstrations against the Vietnam War on campuses across the country. The war started in 1955 and wouldn’t officially end for six more years. Students at the U were no exception. “In October 1969, several thousand students paraded from campus to the Federal Building in downtown Salt Lake City to protest the war.”',
         '<strong> 1970 </strong>',
-        '<img src="http://dailyutahchronicle.com/wp-content/uploads/img_1633-e1485715664393.jpg" alt="University of Utah Protest" align="right" class="responsive-img imageRight">',
+        '<img src="http://dailyutahchronicle.com/wp-content/uploads/img_1633-e1485715664393.jpg" alt="University of Utah Protest" align="right" class="responsive-img imageRight"  style="height:33%; width:33%;">',
         'On April 30, President Richard Nixon announced that American troops were to invade Cambodia, which meant the US would draft 150,000 more soldiers. Students across the nation protested again in opposition to the war. On May 4, a protest at Kent State University took a violent turn when members of the National Guard shot and killed four students.',
         'Days later, 4,000 students from the U gathered for a demonstration just south of the Union Building in response to the deaths at Kent State. “Classes were disrupted, the Daily Utah Chronicle offices were occupied, and the ROTC building was fire-bombed.” Some students were arrested after being told to leave.',
         'Jerry Rubin, a leader of Students for a Democratic Society, later gave a speech in which he insisted that the hills and tress that currently reside south of the Union were placed there to impede protesters.',
