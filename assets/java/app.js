@@ -1,8 +1,5 @@
 $(document).ready(function () {
 
-  //initialize slider
-  $('.slider').slider();
-
   //initialize tabs
   $('ul.tabs').tabs('select_tab', 'tab_id');
 
@@ -13,22 +10,6 @@ $(document).ready(function () {
   $('.parallax').parallax();
 
 
-  //set-up pushpin
-  $('.push-pin-bar').each(function () {
-    var $this = $(this);
-    var $target = $('#' + $(this).attr('data-target'));
-    $this.pushpin({
-      top: $target.offset().top,
-      bottom: $target.offset().top + $target.outerHeight() - $this.height()
-    });
-  });
-
-  //initialize pushpin
-  $('.target').pushpin({
-    top: 0,
-    bottom: 1000,
-    offset: 0
-  });
 
 
 
@@ -183,23 +164,35 @@ $(document).ready(function () {
     console.log(storyNumber);
     filterStory();
     $("#story0").hide();
+    $("#story1").show();
+    $("#story2").show();
+    $("#story3").show();
   });
   $("#story1, #story-one").on("click", function () {
     storyNumber = 1;
     console.log(storyNumber);
     filterStory();
+    $("#story0").show();
     $("#story1").hide();
+    $("#story2").show();
+    $("#story3").show();
   });
   $("#story2, #story-two").on("click", function () {
     storyNumber = 2;
     console.log(storyNumber);
     filterStory();
+    $("#story0").show();
+    $("#story1").show();
     $("#story2").hide();
+    $("#story3").show();
   });
   $("#story3, #story-three").on("click", function () {
     storyNumber = 3;
     console.log(storyNumber);
     filterStory();
+    $("#story0").show();
+    $("#story1").show();
+    $("#story2").show();
     $("#story3").hide();
   });
 
