@@ -225,7 +225,7 @@ $(document).ready(function () {
 
   //loads a news story and plugs in corresponding story info.
   function loadStory() {
-    window.location = 'https://jhiggi44.github.io/final-portfolio/news.html#beginStory';
+    window.location = 'https://jhiggi44.github.io/news.html#beginStory';
     $("#newsArea").empty();
     $("#newsArea").addClass("news-section");
 
