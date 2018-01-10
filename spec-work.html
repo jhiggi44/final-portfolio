@@ -13,43 +13,88 @@
 </head>
 
 <body>
-    <!-- Dropdown Structure -->
-    <ul id="navDrop" class="dropdown-content">
-        <li>
-            <a href="spec-work.html">Spec Work</a>
-        </li>
-        <li>
-            <a href="news.html">News Writing</a>
-        </li>
-        <li class="divider"></li>
-        <li>
-            <a href="academic.html">Academic Papers</a>
-        </li>
+      <!-- Dropdown Structure -->
+      <ul id="navDrop" class="dropdown-content">
+            <li>
+                    <a href="spec-work.html">Spec Work</a>
+            </li>
+            <li>
+                    <a href="news.html">News Writing</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                    <a href="academic.html">Academic Papers</a>
+            </li>
     </ul>
+
+    <!-- Slide-out Navbar -->
+
+    <ul id="slide-out" class="side-nav">
+            <li>
+                    <div class="user-view">
+                            <div class="background">
+                                    <img src="assets/images/red-background.jpg">
+                            </div>
+                            <a href="index.html#about-section">
+                                    <img class="circle" src="assets/images/Me.png">
+                            </a>
+                            <a href="index.html">
+                                    <span class="white-text name">Jordan Higgins</span>
+                            </a>
+                            <a href="index.html#contact-section">
+                                    <span class="white-text email">jordandhiggins@gmail.com</span>
+                            </a>
+                    </div>
+            </li>
+
+            <li>
+                    <a class="subheader">Portfolio</a>
+            </li>
+            <li>
+                    <div class="divider"></div>
+            </li>
+            <li>
+                    <a class="waves-effect" href="news.html">News Writing</a>
+            </li>
+            <li>
+                    <a class="waves-effect" href="spec-work.html">Spec Work</a>
+            </li>
+
+
+            <li>
+                    <a class="waves-effect" href="academic.html">Academic Papers</a>
+            </li>
+    </ul>
+
+    <!-- Fixed navbar -->
     <div class="navbar-fixed">
-        <nav class="teal darken-4">
+            <nav class="navColor">
 
-            <div class="nav-wrapper">
+                    <div class="nav-wrapper">
 
-                <a href="index.html" class="brand-logo white-text" id="brand-text">Jordan Higgins</a>
+                            <a href="#" data-activates="slide-out" class="button-collapse">
+                                    <i class="material-icons nav-text">menu</i>
+                            </a>
+                            <a href="index.html" class="brand-logo red-text text-darken-4 nav-text" id="brand-text">Jordan Higgins</a>
 
-                <ul class="right hide-on-med-and-down">
-                    <li>
-                        <a href="index.html#about-section" class="white-text">About</a>
-                    </li>
-                    <li>
-                        <a href="index.html#contact-section" class="white-text">Contact</a>
-                    </li>
-                    <!-- Dropdown Trigger -->
-                    <li>
-                        <a class="dropdown-button white-text" href="#!" data-activates="navDrop">Portfolio
-                            <i class="material-icons right">arrow_drop_down</i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                            <ul class="right hide-on-med-and-down">
+                                    <li>
+                                            <a href="index.html#about-section" class="red-text text-darken-4 nav-text">About</a>
+                                    </li>
+                                    <li>
+                                            <a href="index.html#contact-section" class="red-text text-darken-4 nav-text">Contact</a>
+                                    </li>
+                                    <!-- Dropdown Trigger -->
+                                    <li>
+                                            <a class="dropdown-button red-text text-darken-4 nav-text" href="#!" data-activates="navDrop">Portfolio
+                                                    <i class="material-icons right">arrow_drop_down</i>
+                                            </a>
+                                    </li>
+                            </ul>
 
-        </nav>
+                    </div>
+
+            </nav>
     </div>
 
     <!-- Main Body -->
