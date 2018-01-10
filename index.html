@@ -10,14 +10,103 @@
         <!-- Compiled and minified Materialize CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
         <link rel="stylesheet" href="assets/style/style.css">
+        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script type="text/javascript">
+                (function () {
+                        emailjs.init("user_LhSPOqFKQI99ETpIc7diB");
+                })();
+        </script>
 </head>
 
 <body>
+        <!-- Dropdown Structure -->
+        <ul id="navDrop" class="dropdown-content">
+                <li>
+                        <a href="spec-work.html">Spec Work</a>
+                </li>
+                <li>
+                        <a href="news.html">News Writing</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                        <a href="academic.html">Academic Papers</a>
+                </li>
+        </ul>
+
+        <!-- Slide-out Navbar -->
+
+        <ul id="slide-out" class="side-nav">
+                <li>
+                        <div class="user-view">
+                                <div class="background">
+                                        <img src="assets/images/red-background.jpg">
+                                </div>
+                                <a href="index.html#about-section">
+                                        <img class="circle" src="assets/images/Me.png">
+                                </a>
+                                <a href="index.html">
+                                        <span class="white-text name">Jordan Higgins</span>
+                                </a>
+                                <a href="index.html#contact-section">
+                                        <span class="white-text email">jordandhiggins@gmail.com</span>
+                                </a>
+                        </div>
+                </li>
+
+                <li>
+                        <a class="subheader">Portfolio</a>
+                </li>
+                <li>
+                        <div class="divider"></div>
+                </li>
+                <li>
+                        <a class="waves-effect" href="news.html">News Writing</a>
+                </li>
+                <li>
+                        <a class="waves-effect" href="spec-work.html">Spec Work</a>
+                </li>
+
+
+                <li>
+                        <a class="waves-effect" href="academic.html">Academic Papers</a>
+                </li>
+        </ul>
+
+        <!-- Fixed navbar -->
+        <div class="navbar-fixed">
+                <nav class="navColor">
+
+                        <div class="nav-wrapper">
+
+                                <a href="#" data-activates="slide-out" class="button-collapse">
+                                        <i class="material-icons nav-text">menu</i>
+                                </a>
+                                <a href="index.html" class="brand-logo red-text text-darken-4 nav-text" id="brand-text">Jordan Higgins</a>
+
+                                <ul class="right hide-on-med-and-down">
+                                        <li>
+                                                <a href="index.html#about-section" class="red-text text-darken-4 nav-text">About</a>
+                                        </li>
+                                        <li>
+                                                <a href="index.html#contact-section" class="red-text text-darken-4 nav-text">Contact</a>
+                                        </li>
+                                        <!-- Dropdown Trigger -->
+                                        <li>
+                                                <a class="dropdown-button red-text text-darken-4 nav-text" href="#!" data-activates="navDrop">Portfolio
+                                                        <i class="material-icons right">arrow_drop_down</i>
+                                                </a>
+                                        </li>
+                                </ul>
+
+                        </div>
+
+                </nav>
+        </div>
         <!-- Header -->
 
         <div class="parallax-container">
                 <div class="parallax">
-                        <img src="assets/images/mars-test.svg">
+                        <img src="assets/images/portfolio-header.png">
                 </div>
         </div>
 
@@ -54,7 +143,16 @@
                                                                 </div>
                                                         </div>
                                                         <div class="collapsible-body">
-                                                                <span>Lorem ipsum dolor sit amet.</span>
+                                                                <img src="assets/images/president.jpg" alt="Senior Class President" style="height: 20%; width: 20%;" class="imageLeft" align="left">
+                                                                <p>I had a blast at Riverton High School, and learned valuable
+                                                                        skills by being involved in student government. As
+                                                                        Senior Class President, I helped plan multiple assemblies,
+                                                                        school dances, and other events throughout the year.
+                                                                        I’ve tried to maintain the same sense of community
+                                                                        I felt at Riverton by staying involved in everything
+                                                                        I do.
+                                                                </p>
+
                                                         </div>
                                                 </li>
                                                 <li>
@@ -65,8 +163,29 @@
                                                                         <h5> Salt Lake Community College </h5>
                                                                 </div>
                                                         </div>
-                                                        <div class="collapsible-body blue">
-                                                                <span>Lorem ipsum dolor sit amet.</span>
+                                                        <div class="collapsible-body">
+                                                                <p>I started my college career and Salt Lake Community College,
+                                                                        where I obtained an associate degree in general studies.
+                                                                        Initially, I had planned to take all the prerequisites
+                                                                        to become a pharmacist, but I (no offense to pharmacists)
+                                                                        soon realized I had a passion for writing. Writing
+                                                                        for my english courses challenged my mind in ways
+                                                                        that memorizing medical terms did not. Writing challenged
+                                                                        me to rethink reality, to focus on nuance, and to
+                                                                        artfully craft an argument. </p>
+                                                                <p>The following semesters I enrolled in as many English/Communication
+                                                                        courses I could fit in my schedule.</p>
+                                                                <p>
+                                                                        <strong>Major: </strong> General Studies</p>
+                                                                <p>
+                                                                        <strong>Cumulative GPA: </strong> 3.8</p>
+                                                                <p>
+                                                                        <strong>Coursework: </strong> Grammar and Style, Publication
+                                                                        Studies, Introduction to Literature and Critical
+                                                                        Theory, Technical Writing, and other required courses.
+                                                                </p>
+                                                                <p>
+                                                                        <strong>Graduation Date: </strong>May 2016</p>
                                                         </div>
                                                 </li>
                                                 <li>
@@ -78,22 +197,51 @@
                                                                 </div>
                                                         </div>
                                                         <div class="collapsible-body">
-                                                                <span>
-                                                                        When we last left our intrepid, intergalactic heroes, they were battered and bruised, but victorious. The Starkiller Base
-                                                                        had been destroyed and there was a spark of hope
-                                                                        once again in a galaxy far, far away. Finn was recovering
-                                                                        from his injuries, Leia was coping with the loss
-                                                                        of her husband and Rey had landed on tiny island
-                                                                        on a distant planet, face to face with the legendary
-                                                                        Jedi Master — and hero of the Rebel Alliance — Luke
-                                                                        Skywalker. The Last Jedi picks up shortly after The
-                                                                        Force Awakens with the dwindling Resistance, led
-                                                                        fearlessly by General Leia Organa (Carrie Fisher),
-                                                                        locked in a lopsided struggle with the First Order.
-                                                                        This battle serves as one of two threads that director
-                                                                        Rian Johnson’s film follows for the two and a half
-                                                                        hour run time, which flies by in an instant
-                                                                </span>
+                                                                <h5>Bachelor's Degree</h5>
+                                                                <p>After graduating from Salt Lake Community College with an
+                                                                        associate degree, I started working toward a bachelor’s
+                                                                        degree at the University of Utah. I took classes
+                                                                        in the English, journalism, and strategic communication
+                                                                        departments before deciding a major. Of the three,
+                                                                        I chose to focus on strategic communication because
+                                                                        it would introduce me to a variety of disciplines,
+                                                                        including public relations, advertising, and integrated
+                                                                        marketing. Additionally, I enjoyed taking courses
+                                                                        in the Film and Media Arts department to fill my
+                                                                        elective credits, where I worked in a film crew and
+                                                                        learned basics in animation, film editing, and script
+                                                                        writing.
+                                                                </p>
+                                                                <p>
+                                                                        <strong>Major: </strong> Communication</p>
+
+                                                                <p>
+                                                                        <strong>Emphasis: </strong> Strategic Communication</p>
+                                                                <p>
+                                                                        <strong>Cumulative GPA: </strong> 3.95</p>
+                                                                <p>
+                                                                        <strong>Coursework: </strong> Principles of Visual Communication,
+                                                                        Introduction to News Writing, Introduction to Media
+                                                                        Business and Ethics, Magazine Writing, Introduction
+                                                                        to Animation, Intensive Crew and Video Production,
+                                                                        Strategic Communication and Critical Thinking, Strategic
+                                                                        Communication Theory and Practice, Writing for Strategic
+                                                                        Communication, Mass Communication Law, and Usable
+                                                                        Web Design.
+                                                                </p>
+                                                                <p>
+                                                                        <strong>Graduation Date: </strong>December 2017</p>
+                                                                <h5>Coding Bootcamp</h5>
+                                                                <p>Currently, I am enrolled in a coding bootcamp offered by
+                                                                        the University of Utah, where I’ve learned basic
+                                                                        technical skills to build a website. In fact, I put
+                                                                        those skills to the test to build this website -
+                                                                        from scratch! I used HTML, CSS, Materialize, and
+                                                                        Javascript to make this website. Additionally, I
+                                                                        used a program (very similar to Adobe Illustrator,
+                                                                        which I am also familiar with) called Affinity Designer
+                                                                        to decorate my website with graphics and illustrations.
+                                                                </p>
                                                         </div>
                                                 </li>
                                         </ul>
@@ -103,10 +251,12 @@
                                                 <div class="card">
                                                         <div class="card-image">
                                                                 <img src="assets/images/me-logo.png">
-                                                                <span class="card-title">Jordan Higgins</span>
+                                                                <span class="card-title"> Jordan Higgins</span>
                                                         </div>
                                                         <div class="card-content">
-                                                                <p>My name is Jordan... This is a summary of me.</p>
+                                                                <p>I've got 4 different keyboards, a laptop, a drawer full of
+                                                                        colorful socks, a bachelor's degree in strategic
+                                                                        communication, and dreams of being a writer.</p>
                                                         </div>
                                                         <div class="card-action">
                                                                 <p>Follow me on social media: </p>
@@ -149,7 +299,19 @@
                                                                 </div>
                                                         </div>
                                                         <div class="collapsible-body">
-                                                                <span>Lorem ipsum dolor sit amet.</span>
+                                                                <p>As a student at the University of Utah, I became involved
+                                                                        with student media while writing for The Daily Utah
+                                                                        Chronicle. During my time writing campus news, I
+                                                                        learned a great deal from interviewing students who
+                                                                        I might have never talked to otherwise, who held
+                                                                        unique perspectives and varying accomplishments.
+                                                                        I learned to write quickly and meet deadlines, practiced
+                                                                        grammar and style, and received feedback from an
+                                                                        editor.
+                                                                </p>
+                                                                <p>You can read some of the content I wrote
+                                                                        <a href="news.html">here.</a>
+                                                                </p>
                                                         </div>
                                                 </li>
                                                 <li>
@@ -161,7 +323,13 @@
                                                                 </div>
                                                         </div>
                                                         <div class="collapsible-body">
-                                                                <span>Lorem ipsum dolor sit amet.</span>
+                                                                <p>I worked as a pharmacy technician at University of Utah Hospital's
+                                                                        outpatient pharmacy. I maintained the status of full-time
+                                                                        employee while also going to school full-time. Working
+                                                                        and going to school helped me learn to juggle multiple
+                                                                        responsibilities effectively and achieve my goal
+                                                                        of graduating free of debt.
+                                                                </p>
                                                         </div>
                                                 </li>
                                                 <li>
@@ -170,10 +338,20 @@
                                                                 <img src="assets/images/primary-logo.png" alt="Primary Children's" class="school-logos">
                                                                 <div class="valign-wrapper">
                                                                         <h5>Volunteer Work</h5>
+
                                                                 </div>
                                                         </div>
                                                         <div class="collapsible-body">
-                                                                <span>Lorem ipsum dolor sit amet.</span>
+                                                                <p>My wife and I volunteered at Dream Academy, an after-school
+                                                                        program for kids
+                                                                        <a href="https://www.usdreamacademy.org/our-programs.cfm">"most at risk of incarceration"</a> for 5 months
+                                                                        before volunteering at Primary Children's Hospital
+                                                                        for the past year providing spiritual relief to patients
+                                                                        and their families.</p>
+                                                                <p>Additionally, I served a mission for the Church of Jesus
+                                                                        Christ of Latter-day Saints in Riverside, California,
+                                                                        where I obtained a fluency in spanish.
+                                                                </p>
                                                         </div>
                                                 </li>
                                         </ul>
@@ -183,10 +361,12 @@
                                                 <div class="card">
                                                         <div class="card-image">
                                                                 <img src="assets/images/me-logo.png">
-                                                                <span class="card-title">Jordan Higgins</span>
+                                                                <span class="card-title"> Jordan Higgins </span>
                                                         </div>
                                                         <div class="card-content">
-                                                                <p>My name is Jordan... This is a summary of me.</p>
+                                                                <p>I've got 4 different keyboards, a laptop, a drawer full of
+                                                                        colorful socks, a bachelor's degree in strategic
+                                                                        communication, and dreams of being a writer.</p>
                                                         </div>
                                                         <div class="card-action">
                                                                 <p>Follow me on social media: </p>
@@ -235,23 +415,31 @@
                                 <div class="valign-wrapper">
                                         <div class="row portfolio-rows">
 
-                                                <div class="col s12 m4 left">
+                                                <!-- <div class="col s12 m4">
                                                         <a href="news.html">
                                                                 <img src="assets/images/red-plane.png" alt="News Writing" class="responsive-img hoverable">
                                                         </a>
                                                 </div>
-                                                <!-- <div class="col s12 m4">
-                                                <img src="assets/images/red-plane.png" alt="News Writing" class="responsive-img hoverable">
-                                        </div> -->
-                                                <div class="col s12 m4 right">
+                                            
+                                                <div class="col s12 m4">
                                                         <img src="assets/images/yellow-plane.png" alt="News Writing" class="responsive-img hoverable">
                                                 </div>
+                                                <div class="col s12 m4 center">
+                                                        <img src="assets/images/green-plane.png" alt="News Writing" class="responsive-img hoverable">
+                                                </div> -->
 
                                         </div>
                                 </div>
                                 <!-- Row 2 Portfolio -->
                                 <div class="row portfolio-rows">
-                                        <div class="col m3"></div>
+                                        <div class="col s12 m4">
+                                                <a href="news.html">
+                                                        <img src="assets/images/red-plane.png" alt="News Writing" class="responsive-img hoverable">
+                                                </a>
+                                        </div>
+                                        <div class="col s12 m4">
+                                                <img src="assets/images/yellow-plane.png" alt="News Writing" class="responsive-img hoverable">
+                                        </div>
                                         <div class="col s12 m4 center">
                                                 <img src="assets/images/green-plane.png" alt="News Writing" class="responsive-img hoverable">
                                         </div>
@@ -271,20 +459,20 @@
                         <div class="row">
                                 <form class="col s12">
                                         <div class="input-field col s6">
-                                                <input placeholder="Jane Doe" id="nameInput" type="text" class="validate">
+                                                <input placeholder="Jane Doe" id="from_name" type="text" class="validate">
                                                 <label for="name">Name</label>
                                         </div>
                                         <div class="input-field col s6">
                                                 <input placeholder="your-email@example.com" id="nameInput" type="email" class="validate">
-                                                <label for="name">Email</label>
+                                                <label for="email">Email</label>
                                         </div>
                                         <div class="input-field col s12">
-                                                <textarea id="messageInput" class="materialize-textarea" placeholder="Leave a message."></textarea>
-                                                <label for="textarea1">Message</label>
+                                                <textarea id="taco_movie" class="materialize-textarea" placeholder="Leave a message."></textarea>
+                                                <label for="message">Message</label>
                                         </div>
 
 
-                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <button type="submit" class="btn btn-primary" id="sendEmail">Submit</button>
                                 </form>
                         </div>
                 </div>

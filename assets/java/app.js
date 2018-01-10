@@ -3,39 +3,49 @@ $(document).ready(function () {
   //initialize tabs
   $('ul.tabs').tabs('select_tab', 'tab_id');
 
+  // $('#spec-work-tabs').tabs({
+  //   swipeable: true
+  // });
+
   //initialize collapsible
   $('.collapsible').collapsible();
+
+
 
   //initialize parallax
   $('.parallax').parallax();
 
+ // Initialize collapse button
+ $(".button-collapse").sideNav();
 
 
 
+  // Changing the navBar when scroll
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll > 500) {
+      $(".navColor").css({
+        "background-color": "#004d40"
+      });
+      // $(".navFont").css({
+      //   "color": "white"
+      // });
+      $(".nav-text").removeClass("red-text");
+      $(".nav-text").addClass("white-text");
+    } else {
+      $(".navColor").css({
+        "background-color": "white"
+      });
+      // $(".navFont").css({
+      //   "color": "#b71c1c"
+      // });
+      $(".nav-text").removeClass("white-text");
+      $(".nav-text").addClass("red-text");
+    }
+  })
 
-  // // Changing the navBar when scroll
-  // $(window).scroll(function () {
-  //   var scroll = $(window).scrollTop();
-  //   if (scroll > 300) {
-  //     $(".navColor").css({
-  //       "background-color": "black"
-  //     });
-  //     $(".navFont").css({
-  //       "color": "white"
-  //     });
-  //     $("#brand-text").removeClass("black-text");
-  //     $("#brand-text").addClass("white-text");
-  //   } else {
-  //     $(".navColor").css({
-  //       "background-color": "white"
-  //     });
-  //     $(".navFont").css({
-  //       "color": "black"
-  //     });
-  //     $("#brand-text").removeClass("white-text");
-  //     $("#brand-text").addClass("black-text");
-  //   }
-  // })
+
+  //News Page Javascript
 
   var newsArticles = [{
       newsTitle: "Finding Common Ground in Different Religions",
@@ -236,8 +246,6 @@ $(document).ready(function () {
     $("#newsDate").html(newsArticles[storyNumber].newsDate);
     $("#newsLink").html(newsArticles[storyNumber].newsLink);
 
-
-
     for (var i = 0; i < newsArticles[storyNumber].newsContent.length; i++) {
 
       p[i] = $("<p>");
@@ -250,6 +258,39 @@ $(document).ready(function () {
     }
   };
 
+
+
+  // Academic page Javascript
+  $(document).ready(function () {
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
+
+
+
+  //Contace me form
+  var emailInvite = {
+    to_email: "jordandhiggins@gmail.com",
+    reply_to: "",
+    from_name: "",
+    to_name: "Jordan Higgins",
+    taco_movie: ""
+  };
+
+  $("#sendEmail").on("click", function () {
+    event.preventDefault();
+
+    emailInvite.reply_to = $("#reply_to").val();
+    emailInvite.from_name = $("#from_name").val();
+    emailInvite.taco_movie = $("#taco_movie").val();
+
+    emailjs.send("tacos8movies", "taco_email", emailInvite)
+      .then(function (response) {
+        console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+      }, function (err) {
+        console.log("FAILED. error=", err);
+      });
+  });
 
   //end .document 
 });

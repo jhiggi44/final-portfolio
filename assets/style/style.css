@@ -20,15 +20,15 @@ h5 {
 
 p {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 a {
     color: #26a69a;
 }
 
-.small-text {
-    font-size: 15px;
+.big-text {
+    font-size: 22px;
 }
 
 .header {
@@ -56,15 +56,51 @@ a {
 .navColor {
     background-color: white;
     color: black;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .navFont {
     color: black;
 }
 
+#brand-text {
+    margin-left: 20px;
+}
 .brand-logo {
     color: black;
+}
+
+.modal {
+    max-height: 120%;
+    height: 120%;
+    max-width: 100%;
+    width: 100%;
+}
+
+.script-text {
+    font-size: 12px;
+}
+.script-text > ul > li {
+    font-size: 18px;
+}
+
+.tv-script {
+    border-left: 2px solid #e0e0e0;
+}
+
+.border-top {
+    border-top: 2px solid #e0e0e0;
+}
+ 
+.italic-text {
+    font-style: italic;
+}
+
+.ad-img {
+    height: 75%;
+    width: 75%;
+    display: block;
+    margin: auto;
 }
 
 #tabs-about {
@@ -110,7 +146,7 @@ a {
 }
 
 .portfolio-rows {
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 .overlayContent {
