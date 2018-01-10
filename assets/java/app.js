@@ -11,6 +11,11 @@ $(document).ready(function () {
   $('.collapsible').collapsible();
 
 
+  $(document).ready(function () {
+    $('.tooltipped').tooltip({
+      delay: 50
+    });
+  });
 
   //initialize parallax
   $('.parallax').parallax();
@@ -294,8 +299,13 @@ $(document).ready(function () {
     emailjs.send("tacos8movies", "taco_email", emailInvite)
       .then(function (response) {
         console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+        
+        Materialize.toast('Message sent!', 4000);
+
       }, function (err) {
         console.log("FAILED. error=", err);
+        Materialize.toast('There was an error. Please try again or email Jordan personally at jordandhiggins@gmail.com', 4000);
+
       });
   });
 
