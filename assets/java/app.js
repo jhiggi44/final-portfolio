@@ -292,7 +292,7 @@ $(document).ready(function () {
   $("#sendEmail").on("click", function () {
     event.preventDefault();
 
-    emailInvite.reply_to = $("#reply_to").val();
+    emailInvite.reply_name = $("#reply_to").val();
     emailInvite.from_name = $("#from_name").val();
     emailInvite.taco_movie = $("#taco_movie").val();
 
