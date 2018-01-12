@@ -283,7 +283,7 @@ $(document).ready(function () {
   //Contace me form
   var emailInvite = {
     to_email: "jordandhiggins@gmail.com",
-    reply_to: "",
+    reply_name: "",
     from_name: "",
     to_name: "Jordan Higgins",
     taco_movie: ""
