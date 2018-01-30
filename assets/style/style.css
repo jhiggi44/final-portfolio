@@ -2,7 +2,7 @@
 font-family: 'Roboto', sans-serif; */
 
 body {
-    background-color: white;
+   background-color: white;
 }
 
 h1,
@@ -10,12 +10,13 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6, 
+a {
     font-family: 'Roboto Mono', monospace;
 }
 
 h5 {
-    color: #b71c1c;
+    color: #e65100 ;
 }
 
 p {
@@ -105,6 +106,10 @@ a {
     width: 75%;
     display: block;
     margin: auto;
+}
+
+.footer-pattern {
+    background-image: url("../images/pattern.png");
 }
 
 #tabs-about {

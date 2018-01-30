@@ -37,12 +37,12 @@ $(document).ready(function () {
     var scroll = $(window).scrollTop();
     if (scroll > 500) {
       $(".navColor").css({
-        "background-color": "#004d40"
+        "background-color": "#e65100 "
       });
       // $(".navFont").css({
       //   "color": "white"
       // });
-      $(".nav-text").removeClass("red-text");
+      $(".nav-text").removeClass("orange-text");
       $(".nav-text").addClass("white-text");
     } else {
       $(".navColor").css({
@@ -52,7 +52,7 @@ $(document).ready(function () {
       //   "color": "#b71c1c"
       // });
       $(".nav-text").removeClass("white-text");
-      $(".nav-text").addClass("red-text");
+      $(".nav-text").addClass("orange-text");
     }
   })
 
